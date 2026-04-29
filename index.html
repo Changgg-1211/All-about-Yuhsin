@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -219,7 +220,7 @@
     .content {
       max-width: 900px;
       margin: 0 auto;
-      padding: 80px 40px 120px;
+      padding: 20px 40px 120px;
     }
 
     .section-label {
@@ -977,7 +978,7 @@
       const target = card.getBoundingClientRect().top + window.scrollY - 20;
       const start = window.scrollY;
       const distance = target - start;
-      const duration = 800;
+      const duration = id === 'exp1' ? 500 : 800;
       let startTime = null;
       function ease(t) { return 1 - Math.pow(1 - t, 3); }
       function step(timestamp) {
